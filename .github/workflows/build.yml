@@ -22,7 +22,7 @@ jobs:
             zlib1g-dev unzip
       - name: Install buildozer (pinned stable version)
         run: |
-          pip install --upgrade cython==0.29.36
+          pip install --upgrade "cython<3.0,>=0.29.33"
           pip install buildozer==1.5.0
       - name: Build APK
         run: |
